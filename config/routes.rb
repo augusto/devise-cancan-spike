@@ -1,5 +1,10 @@
 DeviseCancan::Application.routes.draw do
+  get "secure/index"
+  get "main/index"
+
   devise_for :users
+  
+  root :to => "main#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
