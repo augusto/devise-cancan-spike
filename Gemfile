@@ -12,6 +12,7 @@ gem 'cancan'
 
 group :development, :test do
   gem 'ZenTest', '>= 4.4.2'
+  gem 'ruby-debug19'
 end
 
 # Use unicorn as the web server

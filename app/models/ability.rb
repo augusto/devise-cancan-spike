@@ -4,8 +4,6 @@ class Ability
   def initialize(user)
     user ||= User.new # guest user (not logged in)
     
-    print "\n\nnew ability for user #{user.email}\n\n"
-    
     if user.role? :admin
       can :manage, :all
     end
