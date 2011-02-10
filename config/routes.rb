@@ -2,7 +2,7 @@ DeviseCancan::Application.routes.draw do
   get "secure/index"
   get "main/index"
 
-  devise_for :users
+  devise_for :users, :controllers => { :registrations => "users/registrations" }
   
   root :to => "main#index"
 
